@@ -85,3 +85,19 @@
 }
 
 /* Your code here */
+
+@media print {
+    .timeline-scroll-area {
+        overflow: visible; /* allow full visibility for printing */
+        transform: scale(0.5); /* scale down the scroll area */
+        width: 200% /* increase width to compensate */
+    }
+
+    .timeline {
+        min-width: auto; /* remove minimum width constraint */
+    }
+
+    .timeline-labels {
+        min-width: auto;
+    }
+}

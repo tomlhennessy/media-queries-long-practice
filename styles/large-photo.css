@@ -42,3 +42,21 @@ a.backButton {
         bottom: 10px;
     }
 }
+
+
+@media print {
+    .photocard .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .photo-card {
+        page-break-inside: avoid; /* prevent breaking across pages */
+    }
+
+    .photo-card img {
+        width: 150px;
+        margin-right: 20px;
+    }
+}
